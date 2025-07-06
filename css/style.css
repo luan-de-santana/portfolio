@@ -1,0 +1,325 @@
+/*
+****** Limpar formatações ******
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+****** Formatações genéricas ******
+*/
+:root {
+    --branco: #FFFFFF;
+    --azul: #0066CC;
+    --cinza: #CCCCCC;
+    --cinza-claro: #C4C4C4;
+    --cinza-escuro: #565656;
+    --escuro: #252525;
+    --vermelho-telha: #986081;
+    --verde: #688F6D;
+    --sombra-2: rgba(0, 0, 0, 0.19);
+}
+
+main {
+    display: grid;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--cinza);
+}
+
+h1 {
+    color: var(--escuro);
+    font-size: 40px;
+}
+
+h2 {
+    color: var(--cinza-escuro);
+    padding: 5px;
+}
+
+h3 {
+    color: var(--cinza-escuro);
+    padding: 5px;
+}
+
+/*
+****** Header (Topo da página) ******
+*/
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: var(--verde);
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 var(--cinza-escuro), 0 6px 20px 0 var(--sombra-2);
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: var(--verde);
+    justify-content: center;
+    padding: 15px 10px 0px 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.li-top {
+    font-size: 20px;
+    display: inline-block;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--branco);
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    color: var(--cinza-escuro);
+    background: var(--branco);
+    box-shadow: 0 4px 8px 0 var(--cinza-escuro), 0 6px 20px 0 var(--sombra-2);
+    text-decoration: none;
+}
+
+#logo {
+    padding: 15px;
+    font-family: "Limelight", sans-serif;
+}
+
+/*
+****** Left Side (Conteúdo à esquerda) ******
+*/
+
+aside {
+    grid-column: 2;
+    margin: 5px;
+    width: 90%;
+}
+
+aside a:link,
+aside a:visited {
+    color: var(--cinza-escuro);
+}
+
+.menu-left {
+    background: var(--branco);
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 var(--cinza-escuro), 0 6px 20px 0 var(--sombra-2);
+}
+
+.li-left {
+    margin-top: 10px;
+    font-size: 20px;
+    display: block;
+}
+
+/*
+****** Conteúdo ******
+*/
+
+section {
+    grid-column-start: 3;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    height: 700px;
+    margin: 5px;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--branco);
+    text-align: justify;
+    box-shadow: 0 4px 8px 0 var(--cinza-escuro), 0 6px 20px 0 var(--sombra-2);
+}
+
+#titulo-conteudo,
+#titulo-menu {
+    grid-column: auto;
+    font-size: 26px;
+    font-family: "Limelight", sans-serif;
+    border-bottom: 1px solid var(--azul);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#container {
+    grid-column-start: 3;
+    grid-column-end: 10;
+    display: grid;
+    align-items: start;
+    justify-content: left;
+    width: auto;
+}
+
+#img-container {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 320px;
+    border: var(--cinza-claro);
+    border-radius: 50%;
+    border-style: double;
+    border-width: 25px;
+}
+
+#div-sobre {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-left: 30px;
+    margin-right: 30px;
+    max-width: 1000px;
+}
+
+#div-formacao {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-left: 30px;
+    margin-right: 30px;
+    max-width: 1000px;
+    display: none;
+}
+
+#div-portfolio {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-left: 30px;
+    margin-right: 30px;
+    max-width: 1000px;
+    display: none;
+}
+
+#div-contato {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-left: 30px;
+    margin-right: 30px;
+    max-width: 1000px;
+    display: none;
+}
+
+.texto-pagina {
+    margin-top: 20px;
+    font-size: large;
+    text-align: justify;
+    text-justify: initial;
+}
+
+tr,
+td {
+    padding: 5px;
+}
+
+#tabela-form {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* 
+****** Aplicando estilo no button do formulário ******
+*/
+button {
+    background-color: var(--verde);
+    transition-duration: 0.4s;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid var(--verde);
+}
+
+.button:hover {
+    background-color: var(--verde);
+    color: white;
+}
+
+/* 
+****** Aplicando estilo nos campos do formulário ******
+*/
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 130px;
+    width: 300px;
+}
+
+/* 
+****** Lógica que será aplicada em dispósitivos móveis ****** 
+*/
+@media only screen and (max-width: 767px) {
+    section {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    aside {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
+
+/*
+****** Formatação de links ******
+*/
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: var(--azul);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*
+****** Footer (Rodapé) ******
+*/
+footer {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 10;
+    font-style: italic;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background: var(--branco);
+    color: var(--azul);
+    box-shadow: 0px -4px 9px var(--cinza-escuro);
+}
