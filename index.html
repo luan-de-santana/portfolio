@@ -7,7 +7,7 @@
     <title>Luan Pimentel de Santana</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="scripts/javascript.js"></script>
+    <script src="javascript.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +27,10 @@
             <!-- Menu no topo da página -->
             <nav>
                 <ul>
-                    <li class="li-top"><a href="#" onclick="exibirSobre()">Sobre mim</a></li>
-                    <li class="li-top"><a href="#" onclick="exibirFormacao()">Formação</a></li>
-                    <li class="li-top"><a href="#" onclick="exibirPortfolio()">Trabalhos</a></li>
-                    <li class="li-top"><a href="#" onclick="exibirContato()">Contato</a></li>
+                    <li class="li-top"><a href="#" onclick='exibirSobre();'>Sobre mim</a></li>
+                    <li class="li-top"><a href="#" onclick='exibirFormacao();'>Formação</a></li>
+                    <li class="li-top"><a href="#" onclick='exibirPortfolio();'>Trabalhos</a></li>
+                    <li class="li-top"><a href="#" onclick='exibirContato();'>Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -41,10 +41,13 @@
             <div class="menu-left">
                 <h3 id="titulo-menu">Menu</h3>
 
-                <li class="li-left"><a href="#" onclick="exibirSobre()">Sobre mim</a></li>
-                <li class="li-left"><a class="texto-cor-escura" href="#" onclick="exibirFormacao()">Formação</a></li>
-                <li class="li-left"><a class="texto-cor-escura" href="#" onclick="exibirPortfolio()">Trabalhos</a></li>
-                <li class="li-left"><a class="texto-cor-escura" href="#" onclick="exibirContato()">Contato</a></li>
+                <li class="li-left"><a href="#" onclick='exibirSobre();'>Sobremim</a></li>
+                <li class="li-left"><a href="#" onclick='exibirFormacao();'>Formação</a>
+                </li>
+                <li class="li-left"><a href="#" onclick='exibirPortfolio();'>Trabalhos</a>
+                </li>
+                <li class="li-left"><a href="#" onclick='exibirContato();'>Contato</a>
+                </li>
 
             </div>
 
@@ -59,7 +62,7 @@
 
                 <div id="container">
                     <!-- Minha imagem que fica mudando ao clicar nos links -->
-                    <img id="img-container" src="imagens/Img1.jpg">
+                    <img id="img-container" src="imagens/img1.jpg">
 
                     <!-- Página de informações sobre mim -->
                     <div id="div-sobre">
@@ -95,7 +98,8 @@
                             móveis Android, apps para tablets e smartphones;
                         </p>
                         <p class="texto-pagina">
-                            • Hoje faço minha graduação a distância (EaD) em Análise e Desenvolvimento de Sistemas na Uninter.
+                            • Hoje faço minha graduação a distância (EaD) em Análise e Desenvolvimento de Sistemas na
+                            Uninter.
                         </p>
 
                     </div>
@@ -144,7 +148,7 @@
                                 <tr>
                                     <td>
                                         <button class="button" id="button-enviar"
-                                            onclick="enviarMensagem()">Enviar</button>
+                                            onclick='enviarMensagem();'>Enviar</button>
                                     </td>
                                 </tr>
                             </table>
